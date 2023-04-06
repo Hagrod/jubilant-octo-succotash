@@ -94,7 +94,7 @@ const createDeploymentForTeam = async ({ team, passcodeHash }) => {
                   path: '/rest/admin/application-version',
                   port: 3000,
                 },
-                initialDelaySeconds: 5,
+                initialDelaySeconds: 120,
                 periodSeconds: 2,
                 failureThreshold: 10,
               },
@@ -103,7 +103,7 @@ const createDeploymentForTeam = async ({ team, passcodeHash }) => {
                   path: '/rest/admin/application-version',
                   port: 3000,
                 },
-                initialDelaySeconds: 30,
+                initialDelaySeconds: 120,
                 periodSeconds: 15,
               },
               volumeMounts: [
